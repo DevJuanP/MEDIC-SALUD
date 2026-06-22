@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    //alias(libs.plugins.kotlin.android)
+    //id("com.google.devtools.kps") version "2.0.21-1.0.27"
 }
 
 android {
@@ -33,6 +35,10 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    buildFeatures{
+        viewBinding=true
+    }
 }
 
 dependencies {
@@ -41,6 +47,20 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+
+    implementation("com.github.bumptech.glide:glide:5.0.7")
+    annotationProcessor("com.github.bumptech.glide:compiler:5.0.7")
+    implementation("com.squareup.retrofit2:retrofit:3.0.0")
+    implementation("com.squareup.retrofit2:converter-gson:3.0.0")
+    //ROOM
+    implementation("androidx.room:room-runtime:2.8.4")
+    //ksp("androidx.room:room-compiler:2.8.4")
+    implementation("androidx.room:room-ktx:2.8.4")
+    androidTestImplementation("androidx.room:room-testing:2.8.4")
+    //navigation fragment
+    implementation("androidx.navigation:navigation-fragment:2.9.8")
+    implementation("androidx.navigation:navigation-ui-ktx:2.9.8")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
