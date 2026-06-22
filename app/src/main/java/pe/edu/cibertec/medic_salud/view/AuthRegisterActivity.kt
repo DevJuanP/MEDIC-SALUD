@@ -73,7 +73,7 @@ class AuthRegisterActivity : AppCompatActivity() {
                 is RegisterViewModel.RegisterState.Loading -> setLoading(true)
                 is RegisterViewModel.RegisterState.Success -> {
                     setLoading(false)
-                    startActivity(Intent(this, MainActivity::class.java))
+                    startActivity(Intent(this, HomeActivity::class.java))
                     finishAffinity() // Cierra el flujo de login/registro
                 }
                 is RegisterViewModel.RegisterState.Error -> {

@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/texthome"/>
+    <item
+        android:id="@+id/docsFragment"
+        android:icon="@drawable/outline_article_24"
+        android:title="@string/textdocs"/>
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/outline_assignment_24"
+        android:title="@string/texthistory"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/outline_account_circle_24"
+        android:title="@string/textprofile"/>
 </menu>

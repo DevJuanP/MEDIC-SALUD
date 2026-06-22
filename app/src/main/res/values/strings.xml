@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MEDIC-SALUD</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texthistory">History</string>
+    <string name="textdocs">Docs</string>
+    <string name="texthome">Home</string>
+    <string name="textprofile">Profile</string>
 </resources>

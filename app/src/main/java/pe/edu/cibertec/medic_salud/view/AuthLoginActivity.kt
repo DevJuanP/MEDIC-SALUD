@@ -37,7 +37,7 @@ class AuthLoginActivity : AppCompatActivity() {
                 is LoginViewModel.LoginState.Loading -> setLoading(true)
                 is LoginViewModel.LoginState.Success -> {
                     setLoading(false)
-                    startActivity(Intent(this, MainActivity::class.java))
+                    startActivity(Intent(this, HomeActivity::class.java))
                     finish()
                 }
                 is LoginViewModel.LoginState.Error -> {
