@@ -1,7 +1,5 @@
 plugins {
     alias(libs.plugins.android.application)
-    //alias(libs.plugins.kotlin.android)
-    //id("com.google.devtools.kps") version "2.0.21-1.0.27"
 }
 
 android {
@@ -60,6 +58,9 @@ dependencies {
     //navigation fragment
     implementation("androidx.navigation:navigation-fragment:2.9.8")
     implementation("androidx.navigation:navigation-ui-ktx:2.9.8")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)

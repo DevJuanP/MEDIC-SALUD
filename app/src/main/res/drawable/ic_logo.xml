@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="64dp"
+    android:viewportWidth="100"
+    android:viewportHeight="88">
+
+    <!-- Heart outline -->
+    <path
+        android:pathData="M50,82 C28,66 6,52 6,34 C6,19 16,10 29,10 C36,10 43,14 50,22 C57,14 64,10 71,10 C84,10 94,19 94,34 C94,52 72,66 50,82 Z"
+        android:strokeColor="#9E6B7A"
+        android:strokeWidth="3.5"
+        android:fillColor="@android:color/transparent" />
+
+    <!-- EKG / heartbeat line -->
+    <path
+        android:pathData="M14,46 L28,46 L33,30 L39,60 L45,38 L50,46 L66,46 L86,46"
+        android:strokeColor="#9E6B7A"
+        android:strokeWidth="2.8"
+        android:fillColor="@android:color/transparent"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Small cross at top -->
+    <path
+        android:pathData="M50,1 L50,9 M46,5 L54,5"
+        android:strokeColor="#9E6B7A"
+        android:strokeWidth="2.5"
+        android:fillColor="@android:color/transparent"
+        android:strokeLineCap="round" />
+</vector>
