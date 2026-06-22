@@ -1,14 +1,11 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.ksp)
 }
 
 android {
     namespace = "pe.edu.cibertec.medic_salud"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "pe.edu.cibertec.medic_salud"
@@ -52,15 +49,12 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:3.0.0")
     //ROOM
     implementation("androidx.room:room-runtime:2.8.4")
-    //ksp("androidx.room:room-compiler:2.8.4")
+    ksp("androidx.room:room-compiler:2.8.4")
     implementation("androidx.room:room-ktx:2.8.4")
     androidTestImplementation("androidx.room:room-testing:2.8.4")
     //navigation fragment
     implementation("androidx.navigation:navigation-fragment:2.9.8")
     implementation("androidx.navigation:navigation-ui-ktx:2.9.8")
-
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -56,7 +56,7 @@ class SessionRepository(context: Context) {
         dbHelper.writableDatabase.delete(SessionDbHelper.TABLE_SESSION, null, null)
     }
 
-    private fun saveSession(response: LoginResponse) {
+    fun saveSession(response: LoginResponse) {
         val db = dbHelper.writableDatabase
         val values = ContentValues().apply {
             put(SessionDbHelper.COL_ID, 1)
