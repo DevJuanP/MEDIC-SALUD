@@ -45,9 +45,18 @@ interface PatientAuthApi {
         @Body request: AppointmentRequest
     ): Response<AppointmentResponse>
 
+    @GET("api/appointment/{code}")
+    suspend fun getAppointmentDetail(
+        @Header("Authorization") token: String,
+        @Path("code") appointmentCode: String
+    ): Response<AppointmentResponse>
+
     @PATCH("api/appointment/{code}/confirm-payment")
     suspend fun confirmPayment(
         @Header("Authorization") token: String,
         @Path("code") appointmentCode: String
     ): Response<Unit>
+
+    @GET("api/patient/appointments")
+    suspend fun getAppointmentHistory(@Header("Authorization") token: String): Response<HistoryResponse>
 }

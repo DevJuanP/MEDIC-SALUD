@@ -147,12 +147,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
             android:gravity="center"
             android:lineSpacingExtra="4dp"
-            android:text="No te encuentras con citas\npor el momento"
+            android:text="@string/txtBienvenida"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:layout_marginBottom="48dp" />
+            android:textSize="20sp" />
 
         <!-- Schedule Button -->
         <TextView

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MEDICSALUD"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".view.citas.CitaDetalleActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.citas.CitaFinalActivity"
             android:exported="false" />
         <activity
