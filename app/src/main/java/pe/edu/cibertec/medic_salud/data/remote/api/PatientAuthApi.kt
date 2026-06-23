@@ -59,4 +59,7 @@ interface PatientAuthApi {
 
     @GET("api/patient/appointments")
     suspend fun getAppointmentHistory(@Header("Authorization") token: String): Response<HistoryResponse>
+
+    @GET("api/patient/diagnostics")
+    suspend fun getDiagnostics(@Header("Authorization") token: String): Response<DiagnosticResponse>
 }
